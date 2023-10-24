@@ -31,9 +31,6 @@ if options.cluster_name[-3:] == "-sa" or options.cluster_name[-3:] == "-us":
 cluster_metrics = None
 
 # Metricas do Cluster
-# ...
-
-# Metricas do Cluster
 try:
     ecs_client = boto3.client('ecs', aws_access_key_id=options.access_key, aws_secret_access_key=options.secret_key, region_name=options.region)
 
